@@ -111,6 +111,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Origine.cpp" />
+    <ClCompile Include="soapC.cpp" />
+    <ClCompile Include="soapTransitTimePortBindingProxy.cpp" />
+    <ClCompile Include="stdsoap2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="calc.h" />
+    <ClInclude Include="soapH.h" />
+    <ClInclude Include="soapStub.h" />
+    <ClInclude Include="soapTransitTimePortBindingProxy.h" />
+    <ClInclude Include="stdsoap2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
