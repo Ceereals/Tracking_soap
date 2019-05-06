@@ -15,8 +15,10 @@ int main() {
 	b.arg0 = &a;
 	ns1__getTransitTime *g = &b;
 	if (transitTimeCalculator.getTransitTime(g, r) == SOAP_OK) {
-		cout << *r.return_->EstimatedDays << " day/s estimated" << endl;
-		cout << *r.return_->EstimatedDeliveryDate << endl;
+		cout << "From: " << *r.return_->OrigCity << endl;
+		cout << "To: " << *r.return_->DestCity << endl;
+		cout << "Estimated Day/s: " << *r.return_->EstimatedDays << endl;
+		cout << "Estimated Delivery Date: " << *r.return_->EstimatedDeliveryDate << endl;
 
 	}
 	system("pause");
